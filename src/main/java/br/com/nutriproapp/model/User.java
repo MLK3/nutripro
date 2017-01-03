@@ -15,7 +15,7 @@ public class User {
     }
     
     
-    public User(String username, int age, Gender gender, int height, double weight, ActivityLevel activityLevel) {
+	public User(String username, int age, Gender gender, int height, double weight, ActivityLevel activityLevel) {
         this.username = username;
         this.age = age;
         this.gender = gender;
@@ -23,7 +23,6 @@ public class User {
         this.weight = weight;
         this.activityLevel = activityLevel;
     }
-
 
     public String getUsername() {
         return username;

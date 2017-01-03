@@ -13,6 +13,7 @@ public class Diet {
     public void setEnergy(double energy) {
         this.energy = energy;
     }
+    
 
     public static Diet getDiet(User user) {
         Diet diet = new Diet();
