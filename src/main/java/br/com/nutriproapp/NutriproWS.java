@@ -10,7 +10,6 @@ import br.com.nutriproapp.db.UserRepository;
 import br.com.nutriproapp.model.Diet;
 import br.com.nutriproapp.model.User;
 
-@Path("/")
 public class NutriproWS {
 	
 	private UserRepository userRepository;
@@ -19,9 +18,9 @@ public class NutriproWS {
 		userRepository = new UserRepository();
 	}
 	
-	@Path("diet")
-	@GET
-	@Produces({MediaType.APPLICATION_JSON})
+//	@Path("diet")
+//	@GET
+//	@Produces({MediaType.APPLICATION_JSON})
 	public Diet getDiet(@QueryParam("username") String username) {
 		System.out.println("getDiet() username=" + username);
 		User user = userRepository.findByUsername(username);
